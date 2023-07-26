@@ -8,7 +8,7 @@ class Proxy:
     def __init__(self):
         """Initialize the proxy server."""
         self.cache = {}  # A dictionary to store the responses from the remote server.
-        self.servers = ['localhost:80', 'localhost:443']  # A list of servers to proxy the request to.
+        self.servers = ['localhost:8080', 'localhost:8081']  # A list of servers to proxy the request to.
 
     def proxy(self, host, port, url):
         """Proxy an HTTP request to the specified host and port."""
